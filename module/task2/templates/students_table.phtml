@@ -1,0 +1,18 @@
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>ПІБ</th>
+        <th>Курс</th>
+        <th>Спеціальність</th>
+    </tr>
+    <?php
+    foreach ($students as $student) {
+        echo "<tr>";
+        echo "<td>{$student['id']}</td>";
+        echo "<td>{$student['name']}</td>";
+        echo "<td>{$student['course']}</td>";
+        echo "<td>{$student['specialty']}</td>";
+        echo "</tr>";
+    }
+    ?>
+</table>
