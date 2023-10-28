@@ -1,0 +1,26 @@
+<?php
+
+/** @var array $news */
+$news;
+
+?>
+<table border="1">
+    <tr>
+        <th>Code</th>
+        <th>Title</th>
+        <th>Summary</th>
+        <th>Text</th>
+        <th>Date</th>
+        <th>Views</th>
+    </tr>
+    <?php foreach ($news as $article): ?>
+    <tr>
+        <td><?= $article['code']; ?></td>
+        <td><?= $article['title']; ?></td>
+        <td><?= $article['summary']; ?></td>
+        <td><?= $article['text']; ?></td>
+        <td><?= $article['date']; ?></td>
+        <td><?= $article['views']; ?></td>
+    </tr>
+    <?php endforeach; ?>
+</table>
